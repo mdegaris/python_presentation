@@ -1,5 +1,3 @@
-
-
 def dict_comprehensions():
 
     dict = {"HUMAN": 1,

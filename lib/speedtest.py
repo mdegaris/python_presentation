@@ -8,8 +8,9 @@ __all__ = ['slow', 'fast', 'faster']
     Sum the numbers from 0 to n-1.
 """
 
+
 @timer
-def slow():    
+def slow():
     i = 0
     sum = 0
     while(i < 100_000_000):
@@ -17,6 +18,7 @@ def slow():
         i += 1
 
     return sum
+
 
 @timer
 def fast():
@@ -26,8 +28,8 @@ def fast():
 
     return sum
 
+
 @timer
 def faster():
     sum = numpy.sum(numpy.arange(100_000_000))
     return sum
-
